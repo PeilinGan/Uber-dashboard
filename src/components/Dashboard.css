@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+i {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.widgetWrap {
+  color: white;
+  background: #2a2a2a;
+}
+
+.widgetTitle {
+  height: auto;
+  border-bottom: 1px solid #665151;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  min-height: 200px;
+}
