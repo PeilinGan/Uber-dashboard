@@ -3,13 +3,15 @@ import React from 'react';
 class Cards extends React.Component {
   render() {
     let selection = this.props.selection;
+    let key = 0;
     const renderedCards = departments[selection].map((card) => {
+      key += 1;
       return (
-        <div className="card" style={{ width: '18rem', margin: '10px' }}>
-          <div class="card-body">
-            <h4 class="card-name">{card.name}</h4>
-            <h5 class="card-title">{card.title}</h5>
-            <h5 class="card-dep">{card.dep}</h5>
+        <div className="card" style={{ width: '18rem', margin: '10px' }} key={key}>
+          <div className="card-body">
+            <h4 className="card-dep">{card.dep}</h4>
+            <h5 className="card-title">{card.title}</h5>
+            <h5 className="card-name">{card.name}</h5>
           </div>
         </div>
       );

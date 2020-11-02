@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './Cards';
 import Navbar from './Navbar';
+import NavbarDep from './NavbarDep';
 import './Dashboard.css';
 
 class Dashboard extends React.Component {
@@ -21,8 +22,12 @@ class Dashboard extends React.Component {
 
         <div className="container" style={{ paddingTop: '75px' }}>
           <div>
-            <Navbar selection={this.state.indexSelected} onClickDashboard={this.onClickDashboard} />
+            <Navbar />
           </div>
+          <Cards selection="ceo" />
+        </div>
+        <div className="container" style={{ paddingBottom: '75px' }}>
+          <NavbarDep selection={this.state.indexSelected} onClickDashboard={this.onClickDashboard} />
           <Cards selection={this.state.indexSelected} />
         </div>
       </div>
